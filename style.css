@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 120px;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heading-text {
+    padding: 1rem;
+    margin: 0;
+    background-color: aqua;
+    text-align: center;
+}
+
+.nav-bar {
+    background-color: blanchedalmond;
+    padding: 1rem 2rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    font-size: medium;
+    background-color: aquamarine;
+    padding: 0.5em 1em;
+    border-radius: 1rem;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.nav-items li a:hover {
+    cursor: pointer;
+    background-color: chocolate;
+    color: white;
+}
+
+.info {
+    padding: 1rem 2rem;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.education {
+    padding: 1rem 2rem;
+}
+
+.education h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.edu-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.school,
+.degree {
+    max-width: 45%;
+    min-width: 300px;
+    margin: 1rem 0;
+}
+
+.edu-details .name {
+    color: #007bff;
+}
+
+.year-location i {
+    margin-right: 5px;
+    color: #444;
+}
+
+.cgpa-section {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.cgpa-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #666;
+}
+
+.cgpa-value {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.out-of {
+    color: #666;
+    font-size: 14px;
+}
+
+.percentage ul {
+    padding-left: 1rem;
+}
+
+.intro {
+    margin: 1rem 2rem;
+}
+
+.intro span {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.intro-des {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* About page styling */
+
+.about h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.about{
+    margin: 5rem;
+}
+
+.who-am-i p{
+    text-align: justify;
+}
+
+.skill-strength{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills{
+    width: 50vw;
+}
+
+.strengths{
+    width: 50vw;
+}
+
+.strengths .mystrenghs, .experience .myexperience{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.strengths ul i {
+    margin-right: 10px;
+    color: #444;
+}
+
+.strengths .mystrenghs .strengths-desc{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.strengths .mystrenghs .strength-title, .experience .experience-title{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Project styling */
+.projects {
+    padding: 2rem;
+    background-color: #f2f2f2;
+}
+
+.myprojects h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 2rem; /* space between projects */
+}
+
+.project-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.year-location {
+    color: gray;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    text-align: justify;
+    color: #555;
+}
+
