@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <h1 class="heading-text">My Portfolio Website</h1>
+        <h1 class="heading-text">My Portfolio</h1>
         <div class="nav-bar">
             <nav>
                 <ul class="nav-items">
@@ -21,6 +21,15 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+
+        <div id="sidebar" class="sidebar">
+            <a href="#" class="close-btn" onclick="toggleSidebar()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </div>
     </header>
     <main>
@@ -82,12 +91,24 @@
 
             <div class="intro">
                 <p><span>My Short Intro:</span></p>
-                <p class="intro-des">I am a passionate Java Web Developer with a strong foundation in backend development using Spring Boot and JSP. I enjoy building scalable web applications and turning ideas into functional software. Constantly learning and improving, I aim to create clean and efficient code.</p>
+                <p class="intro-des">I am a passionate Java Web Developer with a strong foundation in backend
+                    development using Spring Boot and JSP. I enjoy building scalable web applications and turning ideas
+                    into functional software. Constantly learning and improving, I aim to create clean and efficient
+                    code.</p>
             </div>
         </section>
-
-       
     </main>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
